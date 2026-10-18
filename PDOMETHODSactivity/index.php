@@ -10,9 +10,9 @@
 <body>
 
 	<?php  
-   //paki  (/**/) delete na lang po ung commennts if gagamitin need lang add ulet ng comment if mag excute ng ibang query
-   // select all records from grocery_table
-
+   //reminder : paki delete na lang po ung commennts (/**/) if gagamitin need lang add nalang ulet ng (// or /**/) comment if mag excute ng ibang query
+   
+// select all records from grocery_table
    /* $stmt = $pdo->prepare("SELECT * FROM grocery_table");
     if ($stmt->execute()) 
      echo "<pre>";
