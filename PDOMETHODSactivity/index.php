@@ -10,7 +10,7 @@
 <body>
 
 	<?php  
-   //paki  (/**/) delete na lang po ung commennts if gagamitin
+   //paki  (/**/) delete na lang po ung commennts if gagamitin need lang add ulet ng comment if mag excute ng ibang query
    // select all records from grocery_table
 
    /* $stmt = $pdo->prepare("SELECT * FROM grocery_table");
@@ -51,7 +51,7 @@ if ($stmt->execute()) {
     }
 } */
 
-// number 10. Get all records from grocery_table
+// number 10. get all records from grocery_table
 $stmt = $pdo->prepare("SELECT * FROM grocery_table");
 $stmt->execute();
 
