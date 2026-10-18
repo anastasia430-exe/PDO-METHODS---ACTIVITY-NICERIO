@@ -10,17 +10,18 @@
 <body>
 
 	<?php  
-   //paki delete na lang po ung commennts if gagamitin
+   //paki  (/**/) delete na lang po ung commennts if gagamitin
    // select all records from grocery_table
 
-   /*$stmt = $pdo->prepare("SELECT * FROM grocery_table");
+   /* $stmt = $pdo->prepare("SELECT * FROM grocery_table");
     if ($stmt->execute()) 
-     echo "<pre>";*/
-     
-        //print_r($stmt->fetchAll());  /*number 5. show all records and display using print_r()*/
-        // print_r($stmt->fetch());   /*number 6. fetch() gets one row from the query result */ 
+     echo "<pre>";
+	 
+     //pag magexcute remove // infront
+        // print_r($stmt->fetchAll());  //number 5. show all records and display using print_r()
+        // print_r($stmt->fetch());   //number 6. fetch() gets one row from the query result  
 
-   // echo "</pre>";
+    echo "</pre>"; */
 
 /* number 7. insert a new grocery item into the database
     $stmt = $pdo->prepare("INSERT INTO grocery_table 
@@ -29,10 +30,9 @@ VALUES (31, 'Potato Chips', 'Pringles', 'Snacks', 99.00, 40, 'Pringles Supplier'
 
 if ($stmt->execute()) {
     echo "Record inserted successfully!";
-}*/
+} */
 
 // number 8. delete a grocery item 
-//paki delete na lang po sir pag excute 
 /*$stmt = $pdo->prepare("DELETE FROM grocery_table WHERE grocery_item_id = 31");
 
 if ($stmt->execute()) {
@@ -40,18 +40,16 @@ if ($stmt->execute()) {
 }*/
 
 // number 9. updating record from the database the price of the grocery item with ID 2
-/*$stmt = $pdo->prepare("UPDATE grocery_table SET unit_price = 95.00 WHERE grocery_item_id = 2");
+/* $stmt = $pdo->prepare("UPDATE grocery_table SET unit_price = 95.00 WHERE grocery_item_id = 2");
 if ($stmt->execute()) {
     echo "Record updated successfully!";
-
     $stmt = $pdo->prepare("SELECT * FROM grocery_table WHERE grocery_item_id = 2");
-
     if ($stmt->execute()) {
         echo "<pre>";
         print_r($stmt->fetch());
         echo "</pre>";
     }
-}*/
+} */
 
 // number 10. Get all records from grocery_table
 $stmt = $pdo->prepare("SELECT * FROM grocery_table");
